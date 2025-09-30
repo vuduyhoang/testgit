@@ -20,5 +20,5 @@ jobs:
           git remote add upstream https://github.com/VDuyHoang/testgit.git
           git fetch upstream --tags
           LATEST_TAG=$(git describe --tags `git rev-list --tags --max-count=1`)
-          echo $LATEST_TAG
-          git status
+          git merge "$LATEST_TAG"
+          git push
