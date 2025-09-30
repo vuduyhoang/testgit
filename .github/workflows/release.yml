@@ -2,7 +2,7 @@ name: New Release
 on:
   push:
     branches:
-      - el9
+      - master
 jobs:
   release:
     runs-on: ubuntu-latest
