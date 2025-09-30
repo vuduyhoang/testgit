@@ -20,7 +20,7 @@ jobs:
       - name: Sync with latest upstream repository
         run: |
           git remote add upstream https://github.com/VDuyHoang/testgit.git
-          git fetch upstream --tags
+          git fetch upstream --tags -f
           LATEST_TAG=$(git describe --tags `git rev-list --tags --max-count=1`)
           git merge "$LATEST_TAG" --no-commit --no-ff
           git push
