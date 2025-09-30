@@ -14,10 +14,10 @@ jobs:
         with:
           fetch-depth: 0  # Fetch all history for all tags and branches
           token: ${{ secrets.PAT }}          
-      - name: Set up Git
-        run: |
-          git config --global user.name 'github-actions[bot]'
-          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+#      - name: Set up Git
+#        run: |
+#          git config --global user.name 'github-actions[bot]'
+#          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
       - name: Sync with latest upstream repository
         run: |
           git remote add upstream https://github.com/VDuyHoang/testgit.git
