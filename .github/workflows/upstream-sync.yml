@@ -13,8 +13,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           fetch-depth: 0  # Fetch all history for all tags and branches
-          token: "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"
-          repository: "vuduyhoang/testgit"
+          token: "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"          
       - name: Set up Git
         run: |
           git config --global user.name 'github-actions[bot]'
